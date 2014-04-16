@@ -1,0 +1,26 @@
+{
+  "name": "node-upyun-sdk",
+  "version": "1.0.1",
+  "description": "此模块为又拍云SDK的Node.js版本，使用Promise机制。",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/welefen/node-upyun-sdk.git"
+  },
+  "author": {
+    "name": "welefen",
+    "email": "welefen@gmail.com"
+  },
+  "dependencies": {
+      "request": ">=2.34.0",
+      "thinkjs-util": ">=0.0.1"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/welefen/node-upyun-sdk/issues"
+  },
+  "readmeFilename": "README.md"
+}
