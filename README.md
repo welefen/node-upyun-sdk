@@ -1,19 +1,24 @@
 ## 介绍
+
 ==============
 
 此模块为又拍云SDK的Node.js版本，使用Promise机制。
 
 ## 安装
+
 ```
 npm install node-upyun-sdk
 ```
 
 ## 使用
+
 ```
 var upyun = require("node-upyun-sdk");
 var instance = upyun("bucketname", "username", "password");
 ```
+
 下面的所有接口返回的都是一个promise，可以通过下面的方式来获取返回值和捕获错误：
+
 ```
 instance.getUsage("/").then(function(data){
     console.log(data);
@@ -25,6 +30,7 @@ instance.getUsage("/").then(function(data){
 ### getUsage(path)
 
 * path string 目录名
+
 获取目录的空间占用信息
 
 ```
@@ -37,6 +43,7 @@ instance.getUsage("/foo/bar"); //获取/foo/bar目录的空间使用情况
 * savePath string 又拍云上存放的目录
 * filePath string 本地要上传的目录
 * headers  object|string 附带的headers
+
 文件或者文件夹上传
 
 ```
@@ -54,6 +61,7 @@ instance.upload("/aaa/a.jpg", "img/c.jpg", {
 
 * sourcePath string 又拍云上的目录
 * savePath string 存储的目录
+
 文件或者文件夹下载
 
 ```
@@ -66,6 +74,7 @@ instacen.download("/aaa/a.jpg", "img/c.jpg"); //将a.jpg文件下载到img目录
 
 * path string 要删除的文件夹或者文件
 * force boolean 是否强制删除，强制后会递归删除目录下所有的文件
+
 删除文件或者文件夹
 
 ```
@@ -77,6 +86,7 @@ instance.rm("/aaa/a.jpg"); //删除a.jpg文件
 ### mkDir(path)
 
 * path string 要创建的目录
+
 创建目录
 
 ```
@@ -87,6 +97,7 @@ instance.mkDir("/aaa/bbb"); //递归的创建/aaa/bbb目录
 
 * path string 要读取的文件夹
 * recursive boolean 是否是递归方式，递归方式数据里会有children字段信息
+
 获取文件夹下的文件和子目录信息
 
 ```
@@ -97,6 +108,7 @@ instance.readDir("/aaa", true); //获取/aaa目录下的文件和子目录，包
 ### getInfo(path)
 
 * path string 要获取信息的path
+
 获取文件或者文件夹的信息
 
 ```
