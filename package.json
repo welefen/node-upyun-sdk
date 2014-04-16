@@ -1,6 +1,6 @@
 {
   "name": "node-upyun-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "此模块为又拍云SDK的Node.js版本，使用Promise机制。",
   "main": "index.js",
   "directories": {
