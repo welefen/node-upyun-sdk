@@ -1,6 +1,6 @@
 {
   "name": "node-upyun-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "此模块为又拍云SDK的Node.js版本，使用Promise机制。",
   "main": "index.js",
   "directories": {
@@ -15,8 +15,8 @@
     "email": "welefen@gmail.com"
   },
   "dependencies": {
-      "request": ">=2.34.0",
-      "thinkjs-util": ">=0.0.1"
+    "request": ">=2.34.0",
+    "thinkjs-util": ">=0.0.1"
   },
   "license": "MIT",
   "bugs": {
